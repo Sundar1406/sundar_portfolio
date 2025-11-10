@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +33,7 @@
         .navbar {
             background: rgba(255, 255, 255, 0.95) !important;
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             padding: 1rem 0;
             transition: all 0.3s ease;
         }
@@ -83,8 +84,8 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            border: 5px solid rgba(255,255,255,0.3);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             object-fit: cover;
             margin-bottom: 2rem;
         }
@@ -113,11 +114,11 @@
 
         .btn-primary-custom:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
             color: white !important;
         }
 
-    
+
 
         /* Section Titles */
         .section-title {
@@ -161,14 +162,14 @@
             border-radius: 15px;
             padding: 2rem;
             margin-bottom: 2rem;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: none;
         }
 
         .skill-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
 
         .skill-icon {
@@ -209,7 +210,7 @@
             border-radius: 15px;
             padding: 2rem;
             margin-bottom: 2rem;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             border-left: 4px solid var(--primary-color);
         }
 
@@ -246,7 +247,7 @@
             border-radius: 15px;
             padding: 2rem;
             margin-bottom: 2rem;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease;
         }
 
@@ -282,13 +283,13 @@
             background: white;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
 
         .project-content {
@@ -312,27 +313,46 @@
         }
 
         .cert-badge {
+            display: block;
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
+            color: #fff;
+            border-radius: 12px;
+            padding: .89rem;
+            margin-bottom: 1.8rem;
+            text-align: center;
             box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            text-decoration: none;
         }
 
         .cert-badge:hover {
-            transform: scale(1.05);
+            transform: scale(1.07);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.5);
+            text-decoration: none;
+            color: #fff;
         }
 
         .cert-icon {
-            font-size: 2rem;
+            font-size: 2.3rem;
             margin-bottom: 1rem;
+            color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .cert-badge:hover .cert-icon {
+            transform: rotate(10deg) scale(1.1);
         }
 
         .cert-title {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .cert-badge div:last-child {
+            font-size: 0.95rem;
+            opacity: 0.9;
         }
 
         /* Contact Section */
@@ -345,7 +365,7 @@
             background: white;
             border-radius: 15px;
             padding: 2rem;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
         }
 
         .contact-item {
@@ -400,6 +420,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -431,16 +452,17 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-<a class="navbar-brand d-flex align-items-center" href="#home" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
-  <img src="./shared image.jpeg" alt="Sundar Logo" style="height: 45px; width: 45px; border-radius: 50%; object-fit: cover;">
-  <span style="font-family: 'Lobster', cursive; font-size: 26px; color: rgb(35, 96, 226);">Sundar</span>
-</a>
-
-
+            <a class="navbar-brand d-flex align-items-center" href="#home"
+                style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                <img src="./shared image.jpeg" alt="Sundar Logo"
+                    style="height: 45px; width: 45px; border-radius: 50%; object-fit: cover;">
+                <span style="font-family: 'Lobster', cursive; font-size: 26px; color: rgb(35, 96, 226);">Sundar</span>
+            </a>
 
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -481,44 +503,58 @@
             <div class="row align-items-center mt-5">
                 <div class="col-lg-12">
                     <p class="about-text">
-                        As a passionate fresher actively seeking a career in Python and Full Stack Web Development, I'm eager to contribute to innovative projects that push technological boundaries. With expertise in designing, maintaining, and analyzing databases, along with writing simple and complex SQL queries and stored procedures, I bring a comprehensive approach to software development.
+                        As a passionate fresher actively seeking a career in Python and Full Stack Web Development, I'm
+                        eager to contribute to innovative projects that push technological boundaries. With expertise in
+                        designing, maintaining, and analyzing databases, along with writing simple and complex SQL
+                        queries and stored procedures, I bring a comprehensive approach to software development.
                     </p>
                     <p class="about-text">
-                        I possess a strong understanding of functional requirements and the ability to implement them technically. My analytical and logical thinking, combined with excellent communication skills, enable me to work independently as well as thrive in collaborative team environments. I'm committed to continuous learning and staying updated with the latest technologies in web development.
+                        I possess a strong understanding of functional requirements and the ability to implement them
+                        technically. My analytical and logical thinking, combined with excellent communication skills,
+                        enable me to work independently as well as thrive in collaborative team environments. I'm
+                        committed to continuous learning and staying updated with the latest technologies in web
+                        development.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
             <div class="row mt-5">
+
+                <!-- Frontend Development -->
                 <div class="col-md-4">
                     <div class="skill-card">
                         <div class="skill-icon"><i class="fas fa-code"></i></div>
                         <h3 class="skill-title">Frontend Development</h3>
                         <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> React</li>
                             <li><i class="fas fa-check-circle"></i> HTML5</li>
                             <li><i class="fas fa-check-circle"></i> CSS3</li>
                             <li><i class="fas fa-check-circle"></i> JavaScript</li>
-                            <li><i class="fas fa-check-circle"></i> React JS</li>
+                            <li><i class="fas fa-check-circle"></i> Tailwind CSS</li>
+                            <li><i class="fas fa-check-circle"></i> Bootstrap</li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- Backend Development -->
                 <div class="col-md-4">
                     <div class="skill-card">
                         <div class="skill-icon"><i class="fas fa-server"></i></div>
                         <h3 class="skill-title">Backend Development</h3>
                         <ul class="skill-list">
                             <li><i class="fas fa-check-circle"></i> Python</li>
-                            <li><i class="fas fa-check-circle"></i> Django</li>
-                            <li><i class="fas fa-check-circle"></i> C (Theoretical)</li>
+                            <li><i class="fas fa-check-circle"></i> Node.js</li>
+                            <li><i class="fas fa-check-circle"></i> Frappe Framework</li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- Database Management -->
                 <div class="col-md-4">
                     <div class="skill-card">
                         <div class="skill-icon"><i class="fas fa-database"></i></div>
@@ -526,14 +562,58 @@
                         <ul class="skill-list">
                             <li><i class="fas fa-check-circle"></i> MySQL</li>
                             <li><i class="fas fa-check-circle"></i> SQL</li>
-                            <li><i class="fas fa-check-circle"></i> Database Design</li>
-                            <li><i class="fas fa-check-circle"></i> Stored Procedures</li>
+                            <li><i class="fas fa-check-circle"></i> MongoDB</li>
+                            <li><i class="fas fa-check-circle"></i> MariaDB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <!-- AI & Automation -->
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                        <h3 class="skill-title">AI & Automation</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Python AI Automation</li>
+                            <li><i class="fas fa-check-circle"></i> Model Integration</li>
+                            <li><i class="fas fa-check-circle"></i> Workflow Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <h3 class="skill-title">Tools</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Git</li>
+                            <li><i class="fas fa-check-circle"></i> Postman</li>
+                            <li><i class="fas fa-check-circle"></i> VS Code</li>
+                            <li><i class="fas fa-check-circle"></i> Frappe Cloud</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Others -->
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3 class="skill-title">Others</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> REST API</li>
+                            <li><i class="fas fa-check-circle"></i> JSON</li>
+                            <li><i class="fas fa-check-circle"></i> Debugging</li>
+                            <li><i class="fas fa-check-circle"></i> MERN Stack</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Experience Section -->
     <section id="experience" class="experience-section">
@@ -544,26 +624,40 @@
                     <div class="timeline-item">
                         <div class="timeline-date">6 Months</div>
                         <h3 class="timeline-title">Python Intern</h3>
-                        <p class="timeline-company"><i class="fas fa-building"></i> Tridots Tech Private Limited</p>
+                        <a href="https://www.zucisystems.com/" target="_blank" class="timeline-company">
+                            <i class="fas fa-building"></i> Zuci System Chennai India
+                        </a>
                         <ul class="timeline-description">
                             <li>Developed and maintained Python-based applications</li>
                             <li>Collaborated with team members on software development projects</li>
                             <li>Gained hands-on experience in full-stack development</li>
                             <li>Implemented database solutions using MySQL</li>
                         </ul>
+                        <a href="certificate.jpg" target="_blank" class="btn btn-primary mt-3">
+                            <i class="fas fa-file-image"></i> View the Intern Certificate
+                        </a>
                     </div>
+
                     <div class="timeline-item">
                         <div class="timeline-date">February 2023 - May 2023</div>
-                        <h3 class="timeline-title">Intern</h3>
-                        <p class="timeline-company"><i class="fas fa-building"></i> Gove Enterprises, Tirunelveli, India</p>
+                        <h3 class="timeline-title"> Intern</h3>
+                        <a href="https://www.gove.co" target="_blank" class="timeline-company">
+                            <i class="fas fa-building"></i> Gove Enterprises Tirunelveli India
+                        </a>
                         <ul class="timeline-description">
-                            <li>Supported staff members in their daily tasks, reducing workload burden and allowing for increased focus on higher-priority assignments</li>
-                            <li>Gained valuable experience working within a specific industry, applying learned concepts directly into relevant work situations</li>
+                            <li>Supported staff members in their daily tasks, reducing workload burden and allowing for
+                                increased focus on higher-priority assignments</li>
+                            <li>Gained valuable experience working within a specific industry, applying learned concepts
+                                directly into relevant work situations</li>
                             <li>Sorted and organized files, spreadsheets, and reports efficiently</li>
-                            <li>Gained hands-on experience in various software programs, increasing proficiency and expanding technical skill set</li>
+                            <li>Gained hands-on experience in various software programs, increasing proficiency and
+                                expanding technical skill set</li>
                             <li>Analyzed problems and worked with teams to develop effective solutions</li>
                             <li>Participated in workshops and presentations related to projects to gain knowledge</li>
                         </ul>
+                        <a href="certificate.jpg" target="_blank" class="btn btn-primary mt-3">
+                            <i class="fas fa-file-image"></i> View the Intern Certificate
+                        </a>
                     </div>
                 </div>
             </div>
@@ -577,18 +671,21 @@
             <div class="row mt-5">
                 <div class="col-lg-10 mx-auto">
                     <div class="education-card">
-                        <div class="education-degree"><i class="fas fa-graduation-cap"></i> Bachelor of Engineering: Computer Science Engineering</div>
+                        <div class="education-degree"><i class="fas fa-graduation-cap"></i> Bachelor of Engineering:
+                            Computer Science Engineering</div>
                         <div class="education-school">Francis Xavier Engineering College - Tirunelveli, India</div>
                         <div class="education-date">Graduated: March 2023</div>
                     </div>
                     <div class="education-card">
                         <div class="education-degree"><i class="fas fa-school"></i> XII: Computer Science</div>
-                        <div class="education-school">TDTA Jayaraj Annapackiam Matric. Hr. Sec School - Tirunelveli, India</div>
+                        <div class="education-school">TDTA Jayaraj Annapackiam Matric. Hr. Sec School - Tirunelveli,
+                            India</div>
                         <div class="education-date">Completed: April 2019</div>
                     </div>
                     <div class="education-card">
                         <div class="education-degree"><i class="fas fa-school"></i> X: Computer Science</div>
-                        <div class="education-school">TDTA Jayaraj Annapackiam Matric. Hr. Sec School - Tirunelveli, India</div>
+                        <div class="education-school">TDTA Jayaraj Annapackiam Matric. Hr. Sec School - Tirunelveli,
+                            India</div>
                         <div class="education-date">Completed: March 2017</div>
                     </div>
                 </div>
@@ -597,73 +694,87 @@
     </section>
 
     <!-- Projects Section -->
-<section id="projects" class="projects-section">
-  <div class="container">
-    <h2 class="section-title">Featured Projects</h2>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
 
-    <!-- Sundaram Trucks Project -->
-    <div class="row mt-5">
-      <div class="col-lg-10 mx-auto">
-        <div class="project-card">
-          <div class="project-content">
-            <h3 class="project-title"><i class="fas fa-truck"></i> Sundaram Trucks - Transport Logistics Platform</h3>
-            <p class="project-description">
-              Developed a comprehensive web application designed to revolutionize transport logistics services as a senior capstone project. The platform features an animated navigation bar and login page that create an engaging user experience from the first interaction.
-            </p>
-            <p class="project-description">
-              Key features include a dedicated Trucks tab where customers can browse vehicles with comprehensive specifications, a real-time tracking system providing live location updates, and image animations that enhance the business interface. The website is fully optimized with media queries ensuring seamless responsiveness across all devices.
-            </p>
-            <p class="project-description">
-              <strong>Technologies Used:</strong> HTML, CSS, JavaScript, Real-time Tracking API
-            </p>
-            <p class="project-description">
-              <strong>Impact:</strong> The project successfully improved user interaction, streamlined logistics processes, and provided real-time vehicle tracking for enhanced business efficiency.
-            </p>
-          </div>
+            <!-- Sundaram Trucks Project -->
+            <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title"><i class="fas fa-truck"></i> Cargo Connect - Transport Logistics Platform</h3>
+                            <p class="project-description">
+                                Developed a comprehensive web application designed to revolutionize transport logistics
+                                services as a senior capstone project. The platform features an animated navigation bar
+                                and login page that create an engaging user experience from the first interaction.
+                            </p>
+                            <p class="project-description">
+                                Key features include a dedicated Trucks tab where customers can browse vehicles with
+                                comprehensive specifications, a real-time tracking system providing live location
+                                updates, and image animations that enhance the business interface. The website is fully
+                                optimized with media queries ensuring seamless responsiveness across all devices.
+                            </p>
+                            <p class="project-description">
+                                <strong>Technologies Used:</strong> HTML, CSS, JavaScript, Real-time Tracking API
+                            </p>
+                            <p class="project-description">
+                                <strong>Impact:</strong> The project successfully improved user interaction, streamlined
+                                logistics processes, and provided real-time vehicle tracking for enhanced business
+                                efficiency.
+                            </p>
+                            <!-- GitHub Project Link -->
+                            <a href="https://github.com/Sundar1214/Cargo_Connect" class="btn btn-primary mt-3"
+                                target="_blank" style="text-decoration: none;">
+                                🔗 View Project on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clinic Management System Project -->
+            <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title"><i class="fas fa-hospital"></i> Clinic Management System</h3>
+                            <p class="project-description">
+                                A comprehensive web-based healthcare platform built on the <strong>Frappe
+                                    Framework</strong>.
+                                It streamlines clinic workflows including patient registration, doctor appointments,
+                                billing, pharmacy, and laboratory modules.
+                            </p>
+
+                            <ul class="project-description mt-3">
+                                <li> Patient registration & electronic records</li>
+                                <li> Appointment scheduling with doctor availability</li>
+                                <li> Integrated pharmacy & lab test management</li>
+                                <li> Auto billing and digital prescriptions</li>
+                                <li> Smart automation using Frappe background jobs & schedulers</li>
+                            </ul>
+
+                            <p class="project-description mt-3">
+                                <strong>Technologies Used:</strong> Python, Frappe Framework, MariaDB, HTML, CSS,
+                                JavaScript, AI Automation
+                            </p>
+                            <p class="project-description">
+                                <strong>Impact:</strong> The system improved clinical efficiency, reduced manual
+                                workload, and enabled faster, more accurate patient management across all departments.
+                            </p>
+
+                            <!-- GitHub Project Link -->
+                            <a href="https://github.com/Sundar1406/Clinic-Project-2.O" class="btn btn-primary mt-3"
+                                target="_blank" style="text-decoration: none;">
+                                🔗 View Project on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
-    </div>
-
-   <!-- Clinic Management System Project -->
-<div class="row mt-5">
-  <div class="col-lg-10 mx-auto">
-    <div class="project-card">
-      <div class="project-content">
-        <h3 class="project-title"><i class="fas fa-hospital"></i> Clinic Management System</h3>
-        <p class="project-description">
-          A comprehensive web-based healthcare platform built on the <strong>Frappe Framework</strong>. 
-          It streamlines clinic workflows including patient registration, doctor appointments, billing, pharmacy, and laboratory modules.
-        </p>
-
-        <ul class="project-description mt-3">
-          <li> Patient registration & electronic records</li>
-          <li> Appointment scheduling with doctor availability</li>
-          <li> Integrated pharmacy & lab test management</li>
-          <li> Auto billing and digital prescriptions</li>
-          <li> Smart automation using Frappe background jobs & schedulers</li>
-        </ul>
-
-        <p class="project-description mt-3">
-          <strong>Technologies Used:</strong> Python, Frappe Framework, MariaDB, HTML, CSS, JavaScript, AI Automation
-        </p>
-        <p class="project-description">
-          <strong>Impact:</strong> The system improved clinical efficiency, reduced manual workload, and enabled faster, more accurate patient management across all departments.
-        </p>
-
-        <!-- GitHub Project Link -->
-        <a href="https://github.com/Sundar1406/Clinic-Project-2.O" 
-           class="btn btn-primary mt-3" 
-           target="_blank" 
-           style="text-decoration: none;">
-           🔗 View Project on GitHub
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-</section>
+    </section>
 
 
 
@@ -673,44 +784,55 @@
         <div class="container">
             <h2 class="section-title">Certifications</h2>
             <div class="row mt-5">
+
+                <!-- Python Fullstack Development -->
                 <div class="col-md-4">
-                    <div class="cert-badge">
+                    <a href="python_fullstack.jpg" target="_blank" class="cert-badge text-decoration-none text-dark">
                         <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                         <div class="cert-title">Python Fullstack Development</div>
                         <div>LOGIN 360</div>
-                    </div>
+                    </a>
                 </div>
+
+                <!-- Fullstack in Web Development -->
                 <div class="col-md-4">
-                    <div class="cert-badge">
+                    <a href="web_fullstack.jpg" target="_blank" class="cert-badge text-decoration-none text-dark">
                         <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                         <div class="cert-title">Fullstack in Web Development</div>
                         <div>ICONIX</div>
-                    </div>
+                    </a>
                 </div>
+
+                <!-- Career Edge -->
                 <div class="col-md-4">
-                    <div class="cert-badge">
+                    <a href="career_edge.jpg" target="_blank" class="cert-badge text-decoration-none text-dark">
                         <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                         <div class="cert-title">CAREER EDGE</div>
                         <div>TCS-ion</div>
-                    </div>
+                    </a>
                 </div>
+
+                <!-- Cyber Security -->
                 <div class="col-md-4">
-                    <div class="cert-badge">
+                    <a href="cyber_security.jpg" target="_blank" class="cert-badge text-decoration-none text-dark">
                         <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                         <div class="cert-title">CYBER SECURITY</div>
                         <div>CISCO</div>
-                    </div>
+                    </a>
                 </div>
+
+                <!-- Digital Marketing -->
                 <div class="col-md-4">
-                    <div class="cert-badge">
+                    <a href="digital_marketing.jpg" target="_blank" class="cert-badge text-decoration-none text-dark">
                         <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                         <div class="cert-title">The Fundamental of Digital Marketing</div>
                         <div>GOOGLE</div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -721,20 +843,34 @@
                     <div class="contact-info">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:mgsundar2001@gmail.com" style="color: var(--text-dark); text-decoration: none;">mgsundar2001@gmail.com</a>
+                            <a href="mailto:mgsundar2001@gmail.com"
+                                style="color: var(--text-dark); text-decoration: none;">mgsundar2001@gmail.com</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+91 9345069909</span>
+                            <a href="tel:+919345069909" class="text-decoration-none text-dark">
+                                +91 9345069909
+                            </a>
                         </div>
+
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Tirunelveli, India 627007</span>
+                            <a href="https://www.google.com/maps/place/Tirunelveli,+Tamil+Nadu+627007" target="_blank"
+                                class="text-decoration-none text-dark">
+                                Tirunelveli, India 627007
+                            </a>
                         </div>
+
                         <div class="social-links">
-                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="www.linkedin.com/in/guroosuntar-m-6b67721a7" class="social-link"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Sundar1214" class="social-link"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/m.g_sundar_official/" target="_blank"
+                                class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -771,7 +907,7 @@
         });
 
         // Navbar background on scroll
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
                 navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
@@ -781,4 +917,5 @@
         });
     </script>
 </body>
+
 </html>
